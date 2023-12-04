@@ -29,5 +29,3 @@ source devel/setup.bash
 
 # Run launchfile
 roslaunch rasa_ros dialogue.xml
-
-# Note: to test use the user "Antonello"
