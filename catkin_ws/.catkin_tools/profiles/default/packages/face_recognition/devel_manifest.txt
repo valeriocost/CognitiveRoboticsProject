@@ -1,0 +1,5 @@
+face_recognition
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/face_recognition/cmake.lock /home/anto/Desktop/Group4/catkin_ws/devel/./cmake.lock
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/face_recognition/share/face_recognition/cmake/face_recognitionConfig-version.cmake /home/anto/Desktop/Group4/catkin_ws/devel/share/face_recognition/cmake/face_recognitionConfig-version.cmake
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/face_recognition/share/face_recognition/cmake/face_recognitionConfig.cmake /home/anto/Desktop/Group4/catkin_ws/devel/share/face_recognition/cmake/face_recognitionConfig.cmake
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/face_recognition/lib/pkgconfig/face_recognition.pc /home/anto/Desktop/Group4/catkin_ws/devel/lib/pkgconfig/face_recognition.pc

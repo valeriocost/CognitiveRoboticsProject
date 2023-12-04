@@ -1,0 +1,22 @@
+rasa_ros
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/cmake.lock /home/anto/Desktop/Group4/catkin_ws/devel/./cmake.lock
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/include/rasa_ros/DialogueRequest.h /home/anto/Desktop/Group4/catkin_ws/devel/include/rasa_ros/DialogueRequest.h
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/include/rasa_ros/DialogueResponse.h /home/anto/Desktop/Group4/catkin_ws/devel/include/rasa_ros/DialogueResponse.h
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/include/rasa_ros/Dialogue.h /home/anto/Desktop/Group4/catkin_ws/devel/include/rasa_ros/Dialogue.h
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/rasa_ros/cmake/rasa_ros-msg-extras.cmake /home/anto/Desktop/Group4/catkin_ws/devel/share/rasa_ros/cmake/rasa_ros-msg-extras.cmake
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/rasa_ros/cmake/rasa_rosConfig.cmake /home/anto/Desktop/Group4/catkin_ws/devel/share/rasa_ros/cmake/rasa_rosConfig.cmake
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/rasa_ros/cmake/rasa_ros-msg-paths.cmake /home/anto/Desktop/Group4/catkin_ws/devel/share/rasa_ros/cmake/rasa_ros-msg-paths.cmake
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/rasa_ros/cmake/rasa_rosConfig-version.cmake /home/anto/Desktop/Group4/catkin_ws/devel/share/rasa_ros/cmake/rasa_rosConfig-version.cmake
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/roseus/ros/rasa_ros/manifest.l /home/anto/Desktop/Group4/catkin_ws/devel/share/roseus/ros/rasa_ros/manifest.l
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/roseus/ros/rasa_ros/srv/Dialogue.l /home/anto/Desktop/Group4/catkin_ws/devel/share/roseus/ros/rasa_ros/srv/Dialogue.l
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/gennodejs/ros/rasa_ros/_index.js /home/anto/Desktop/Group4/catkin_ws/devel/share/gennodejs/ros/rasa_ros/_index.js
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/gennodejs/ros/rasa_ros/srv/_index.js /home/anto/Desktop/Group4/catkin_ws/devel/share/gennodejs/ros/rasa_ros/srv/_index.js
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/gennodejs/ros/rasa_ros/srv/Dialogue.js /home/anto/Desktop/Group4/catkin_ws/devel/share/gennodejs/ros/rasa_ros/srv/Dialogue.js
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/common-lisp/ros/rasa_ros/srv/rasa_ros-srv.asd /home/anto/Desktop/Group4/catkin_ws/devel/share/common-lisp/ros/rasa_ros/srv/rasa_ros-srv.asd
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/common-lisp/ros/rasa_ros/srv/Dialogue.lisp /home/anto/Desktop/Group4/catkin_ws/devel/share/common-lisp/ros/rasa_ros/srv/Dialogue.lisp
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/common-lisp/ros/rasa_ros/srv/_package.lisp /home/anto/Desktop/Group4/catkin_ws/devel/share/common-lisp/ros/rasa_ros/srv/_package.lisp
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/share/common-lisp/ros/rasa_ros/srv/_package_Dialogue.lisp /home/anto/Desktop/Group4/catkin_ws/devel/share/common-lisp/ros/rasa_ros/srv/_package_Dialogue.lisp
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/lib/pkgconfig/rasa_ros.pc /home/anto/Desktop/Group4/catkin_ws/devel/lib/pkgconfig/rasa_ros.pc
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/lib/python3/dist-packages/rasa_ros/__init__.py /home/anto/Desktop/Group4/catkin_ws/devel/lib/python3/dist-packages/rasa_ros/__init__.py
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/lib/python3/dist-packages/rasa_ros/srv/_Dialogue.py /home/anto/Desktop/Group4/catkin_ws/devel/lib/python3/dist-packages/rasa_ros/srv/_Dialogue.py
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/rasa_ros/lib/python3/dist-packages/rasa_ros/srv/__init__.py /home/anto/Desktop/Group4/catkin_ws/devel/lib/python3/dist-packages/rasa_ros/srv/__init__.py

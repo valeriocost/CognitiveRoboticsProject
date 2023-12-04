@@ -1,0 +1,173 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- identification
+- todo_update
+- affirm
+- deny
+- insert_todo
+- stop
+- only_information
+- todo_remove
+- todo_visualize
+- todo_delete_all
+- out_of_scope
+entities:
+- alarm
+- category
+- name
+- tag
+- time
+slots:
+  user_id:
+    type: text
+    influence_conversation: false
+  name:
+    type: text
+    influence_conversation: true
+  time:
+    type: text
+    influence_conversation: false
+  todo_tag:
+    type: text
+    influence_conversation: true
+  todo_date:
+    type: text
+    influence_conversation: true
+  todo_time:
+    type: text
+    influence_conversation: true
+  todo_category:
+    type: text
+    influence_conversation: true
+  todo_alarm:
+    type: bool
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hey!
+  - text: Hello, what's your name?
+  - text: Hey! Who are you?
+  utter_goodbye:
+  - text: Bye
+  - text: See you soon!
+  - text: Have a nice day!
+  utter_ask_insert_form_todo_alarm:
+  - text: Do you want to set an alarm?
+  - text: Do you want me to remind you that activity?
+  utter_ask_insert_form_todo_tag:
+  - text: What do you want to add?
+  - text: What is the activity you want to add?
+  - text: What is the activity?
+  utter_ask_insert_form_todo_date:
+  - text: For which day?
+  - text: When should I schedule the {todo_tag} activity?
+  - text: For which day is this activity planned?
+  - text: When is the specified activity planned?
+  - text: For which day do you want to save the {todo_tag} activity?
+  utter_ask_insert_form_todo_time:
+  - text: At what time?
+  - text: For what time is this activity planned?
+  utter_ask_insert_form_todo_category:
+  - text: What is the category?
+  - text: In which category should I add the activity {todo_tag}?
+  - text: The activity {todo_tag} to which category it refers?
+  utter_ask_delete_form_todo_tag:
+  - text: What do you want to delete?
+  utter_insert_finished:
+  - text: I added your to-do in the list
+  - text: I added {todo_tag} to your to-do list
+  - text: '{todo_tag} inserted in your reminders'
+  utter_insert_not_performed:
+  - text: I didn't enter your reminder because it is already saved
+  utter_delete_finished:
+  - text: I deleted your to-do from the list
+  - text: Elimination successfully performed
+  utter_delete_not_performed:
+  - text: Elimination NOT performed
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: Sorry, can you repeat?
+  utter_default:
+  - text: I'm sorry, I can't help you.
+  utter_stop_insert:
+  - text: I stopped the inserting of the to-do
+  - text: I am not inserting that
+  utter_stop_delete:
+  - text: I stopped the deleting of the to-do
+  - text: I am not deleting that
+  utter_stop_update:
+  - text: I stopped the updating of the to-do
+  - text: I am not updating that
+  utter_ask_update_form_todo_tag:
+  - text: What is the todo that you want to update?
+  utter_ask_update_form_todo_category:
+  - text: What do you want to update for the todo {todo_tag}?
+  utter_ask_update_form_todo_date:
+  - text: What do you want to update for the todo {todo_tag}?
+  utter_ask_update_form_todo_time:
+  - text: What do you want to update for the todo {todo_tag}?
+  utter_ask_update_form_todo_alarm:
+  - text: What do you want to update for the todo {todo_tag}?
+  
+actions:
+- action_delete_all_db
+- action_delete_db
+- action_insert_db
+- action_reset_slot
+- action_update_db
+- action_user_db
+- action_visualize_db
+- validate_delete_form
+- validate_insert_form
+- validate_update_form
+forms:
+  insert_form:
+    required_slots:
+      todo_tag:
+      - type: from_entity
+        entity: tag
+      todo_date:
+      - type: from_entity
+        entity: None
+      todo_time:
+      - type: from_entity
+        entity: None
+      todo_category:
+      - type: from_entity
+        entity: category
+      todo_alarm:
+      - type: from_intent
+        value: true
+        intent: affirm
+      - type: from_intent
+        value: false
+        intent: deny
+      - type: from_entity
+        entity: alarm
+  delete_form:
+    required_slots:
+      todo_tag:
+      - type: from_entity
+        entity: tag
+  update_form:
+    required_slots:
+      todo_tag:
+      - type: from_entity
+        entity: tag
+      todo_date:
+      - type: from_entity
+        entity: None
+      todo_time:
+      - type: from_entity
+        entity: None
+      todo_category:
+      - type: from_entity
+        entity: None
+      todo_alarm:
+      - type: from_entity
+        entity: None

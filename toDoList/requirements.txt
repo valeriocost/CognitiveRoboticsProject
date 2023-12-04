@@ -1,0 +1,4 @@
+pyOpenSSL 
+rasa==2.7.2 
+rasa[spacy] 
+rasa[transformers]

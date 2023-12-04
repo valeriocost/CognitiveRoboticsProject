@@ -1,0 +1,5 @@
+cogrob_pepper_nodes/src/examples
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/examples/cmake.lock /home/anto/Desktop/Group4/catkin_ws/devel/./cmake.lock
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/examples/lib/pkgconfig/examples.pc /home/anto/Desktop/Group4/catkin_ws/devel/lib/pkgconfig/examples.pc
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/examples/share/examples/cmake/examplesConfig.cmake /home/anto/Desktop/Group4/catkin_ws/devel/share/examples/cmake/examplesConfig.cmake
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/examples/share/examples/cmake/examplesConfig-version.cmake /home/anto/Desktop/Group4/catkin_ws/devel/share/examples/cmake/examplesConfig-version.cmake

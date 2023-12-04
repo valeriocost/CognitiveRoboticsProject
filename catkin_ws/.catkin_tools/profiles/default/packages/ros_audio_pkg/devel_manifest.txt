@@ -1,0 +1,5 @@
+ros_audio_pkg
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/ros_audio_pkg/cmake.lock /home/anto/Desktop/Group4/catkin_ws/devel/./cmake.lock
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/ros_audio_pkg/share/ros_audio_pkg/cmake/ros_audio_pkgConfig-version.cmake /home/anto/Desktop/Group4/catkin_ws/devel/share/ros_audio_pkg/cmake/ros_audio_pkgConfig-version.cmake
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/ros_audio_pkg/share/ros_audio_pkg/cmake/ros_audio_pkgConfig.cmake /home/anto/Desktop/Group4/catkin_ws/devel/share/ros_audio_pkg/cmake/ros_audio_pkgConfig.cmake
+/home/anto/Desktop/Group4/catkin_ws/devel/.private/ros_audio_pkg/lib/pkgconfig/ros_audio_pkg.pc /home/anto/Desktop/Group4/catkin_ws/devel/lib/pkgconfig/ros_audio_pkg.pc

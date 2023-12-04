@@ -1,0 +1,170 @@
+version: "2.0"
+
+rules:
+
+# story to goodbye the user
+- rule: Say greet anytime the user says greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+# story to goodbye the user
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+# rule to activate the loop to fill the slots for the insert
+- rule: to-do insert activate
+  steps:
+  - intent: insert_todo 
+  - action: insert_form
+  - active_loop: insert_form
+  
+# rule to deactivate the loop when all the slots are filled for the insert
+- rule: to-do insert deactivate
+  condition:
+  - active_loop: insert_form # only run if the form is active
+  steps:
+  - action: insert_form
+  - active_loop: null # deactivate the loop
+  - slot_was_set:
+    - requested_slot: null # check all slots filled
+  - action: action_insert_db
+  - action: action_reset_slot
+
+# rule to deactivate the loop if the user says stop while inserting some reminders
+- rule: Stop insert form
+  condition:
+  - active_loop: insert_form
+  steps:
+    - intent: stop
+    - action: action_deactivate_loop
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: utter_stop_insert
+    - action: action_reset_slot
+
+# rule to continue the loop and execute action if some information are provided (tag, date, time)
+- rule: only information insert Info
+  condition:
+  - active_loop: insert_form
+  steps:
+    - or:
+      - intent: only_information
+      - intent: deny
+      - intent: affirm
+    - action: insert_form
+    - active_loop: insert_form
+
+
+
+# rule to activate the loop to fill the slots for the delete
+- rule: to-do delete activate
+  steps:
+  - intent: todo_remove 
+  - action: delete_form
+  - active_loop: delete_form
+
+# rule to deactivate the loop when all the slots are filled for the delete  
+- rule: to-do delete deactivate
+  condition:
+  - active_loop: delete_form
+  steps:
+  - action: delete_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_delete_db
+  - action: action_reset_slot
+
+# rule to deactivate the loop if the user says stop while deleting some reminders
+- rule: Stop delete form
+  condition:
+  - active_loop: delete_form
+  steps:
+    - intent: stop
+    - action: action_deactivate_loop
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: utter_stop_delete
+    - action: action_reset_slot
+
+# rule to continue the loop and execute action if some information are provided (tag, date, time)
+- rule: only information delete Info
+  condition:
+  - active_loop: delete_form
+  steps:
+    - intent: only_information
+    - action: delete_form
+    - active_loop: delete_form
+
+# rule to visualize the to-do
+- rule: to-do visualization
+  condition:
+  - active_loop: null
+  steps:
+  - intent: todo_visualize
+  - action: action_visualize_db
+  - action: action_reset_slot
+
+# rule to identify the user
+- rule: identify user
+  condition:
+  - active_loop: null
+  steps:
+  - intent: identification
+  - action: action_user_db
+
+# rule to delete all the to-dos
+- rule: to-do delete all
+  condition:
+  - active_loop: null
+  steps:
+  - intent: todo_delete_all
+  - action: action_delete_all_db
+  - action: action_reset_slot
+
+# rule if no intent is recognized
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - or:
+    - intent: nlu_fallback
+    - intent: out_of_scope
+  - action: utter_please_rephrase
+
+
+# rule to activate the loop to fill the slots for the update
+- rule: to-do update activate
+  steps:
+  - intent: todo_update
+  - action: update_form
+  - active_loop: update_form
+
+# rule to deactivate the loop when all the slots are filled for the update  
+- rule: deactivate_update_loop
+  condition:
+  - active_loop: update_form # only run if the form is active
+  steps:
+  - action: update_form
+  - active_loop: null # deactivate the loop
+  - slot_was_set:
+    - requested_slot: null # check all slots filled
+  - action: action_update_db
+  - action: action_reset_slot
+
+# rule to deactivate the loop if the user says stop while updating some reminders
+- rule: Stop update form
+  condition:
+  - active_loop: update_form
+  steps:
+    - intent: stop
+    - action: action_deactivate_loop
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: utter_stop_update
+    - action: action_reset_slot

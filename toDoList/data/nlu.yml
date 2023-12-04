@@ -1,0 +1,1000 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hello
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I don't know
+- intent: identification
+  examples: |
+    - I'm [Antonello](name)
+    - I'm [Luigi](name)
+    - I'm [Claudio](name)
+    - I'm [Eugenio](name)
+    - I'm [Valerio](name)
+    - I'm [Anna](name)
+    - I'm [Margherita](name)
+    - My name is [Allegra](name)
+    - My name is [Lucia](name)
+    - My name is [Antonio](name)
+    - My name is [Luca](name)
+    - My name is [Stefano](name)
+    - My name is [Rossella](name)
+    - My name is [Ivan](name)
+    - I am [Vincenzo](name)
+    - I am [Alberto](name)
+    - I am [Tommaso](name)
+    - I am [Roberta](name)
+    - I am [Maria](name)
+    - I am [Viola](name)
+    - I am [Raffaella](name)
+    - My name's [Alessia](name)
+    - My name's [Lorenzo](name)
+    - My name's [Silvana](name)
+    - My name's [Rocco](name)
+    - My name's [Valeria](name)
+    - My name's [Nicola](name)
+    - My name's [Adolfo](name)
+    - [Elena](name) is my name
+    - [Teresa](name) is my name
+    - [Chiara](name) is my name
+    - [Mariella](name) is my name
+    - [Enrico](name) is my name
+    - [Giacomo](name) is my name
+    - [Alessandro](name) is my name
+    - [Giovanni](name) is my name
+    - I am [Anthony](name)
+- intent: insert_todo
+  examples: |
+    - Add a [reminder](alarm)
+    - Add to my to-do list
+    - Add a [reminder](alarm) for next week
+    - Add a [reminder](alarm) at 1pm
+    - I want to create a [reminder](alarm) in the [hobby](category) category to remind me to [go to the gym](tag) tomorrow at 12pm
+    - Add [complete the project](tag) to my to-do list in the [work](category) category for tomorrow at 8am
+    - Add [go to the dentist](tag) on the 12th september at 15 o'clock to my to-do list
+    - Add a [memo](alarm) to [go shopping](tag) in the [services](category) category
+    - Add to my to-do list to [get dressed](tag)
+    - Add to my to-do list to [make bed](tag) in the [services](category) category
+    - Add to my to-do list to [remove plates from table](tag) in the [services](category) category
+    - Add to my to-do list to [wash face](tag)
+    - Add to my to-do list to [empty backpank](tag)
+    - Add to my to-do list to [tutoring](tag)
+    - Add to my to-do list to [make lunch](tag)
+    - Add to my to-do list to [shower](tag)
+    - Add to my to-do list to [put outfit out for next day](tag)
+    - Add to my to-do list to [play the piano](tag) in the [hobby](category) category
+    - Add to my to-do list to [put away laundry](tag)
+    - Add to my to-do list to [reading](tag) in the [hobby](category) category
+    - Add to my to-do list to [swimming](tag) in the [sport](category) category
+    - Add to my to-do list to [clear plates](tag)
+    - Add to my to-do list to [finish homework](tag) in the [school](category) category
+    - Add to my to-do list to [dictee homework](tag)
+    - Add to my to-do list to [go to the university](tag) in the [university](category) category
+    - Add to my to-do list to [go to the lesson](tag)
+    - Add to my to-do list to [feed parrots](tag)
+    - Add to my to-do list to [gymnastics](tag)
+    - Add to my to-do list to [clean hamster cage](tag) at half past 9
+    - Add to my to-do list to [go to the hospital](tag)
+    - Add to my to-do list to [go to the dentist](tag)
+    - Add to my to-do list to [go to work](tag) later
+    - Add to my to-do list to [clean the room](tag)
+    - Add to my to-do list to [take out the trash](tag)
+    - Add to my to-do list in the [work](category) category to [call the doctor](tag)
+    - Add to my to-do list to [call Luca](tag) at half past 10
+    - Add to my to-do list to [call Mario](tag)
+    - Add to my to-do list to [call the electician](tag) in the [services](category) category
+    - Add to my to-do list to [buy the chart on amazon](tag)
+    - Add to my to-do list to [buy on amazon](tag)
+    - Add to my to-do list to [buy the dinner](tag)
+    - Add to my to-do list to [go shopping](tag) in the [weekend](category) category at 10 o'clock
+    - Add to my to-do list to [clean the parrots](tag)
+    - Add to my to-do list to [walk the dog](tag)
+    - Add to my to-do list to [go to school](tag)
+    - Add to my to-do list in the [school](category) category to [study math](tag) at quarter past 5
+    - Add to my to-do list to [study english](tag)
+    - Add to my to-do list to [study italian](tag) at quarter to 2
+    - Add to my to-do list to [complete the project](tag) in the [work](category) category
+    - Add to my to-do list to [turn off the tv](tag)
+    - Add to my to-do list in the [personal](category) category to [turn off the lights](tag)
+    - Add to my to-do list to [unpack the dishwasher](tag)
+    - Add to my to-do list to [do the dishwasher](tag)
+    - Add to my to-do list to [fill the dishwasher](tag)
+    - Add to my to-do list in the [personal](category) category to [unpack the washing machine](tag) at 5 o'clock
+    - Add to my to-do list to [do the washing machine](tag)
+    - Add to my to-do list to [fill the washing machine](tag)
+    - Add to my to-do list to [close the windows](tag) at half past 10
+    - Add to my to-do list to [feed my son](tag) in the [family](category) category
+    - Add a [memo](alarm) to [get dressed](tag)
+    - Add a [memo](alarm) to [make bed](tag) in the [services](category) category
+    - Add a [memo](alarm) to [remove plates from table](tag)
+    - Add a [memo](alarm) to [wash face](tag)
+    - Add a [memo](alarm) to [empty backpank](tag)
+    - Add a [memo](alarm) to [tutoring](tag)
+    - Add a [memo](alarm) to [make lunch](tag)
+    - Add a [memo](alarm) to [shower](tag)
+    - Add a [memo](alarm) to [put outfit out for next day](tag)
+    - Add a [memo](alarm) to [play the piano](tag) in the [hobby](category) category
+    - Add a [memo](alarm) to [put away laundry](tag)
+    - Add a [memo](alarm) to [reading](tag) in the [hobby](category) category
+    - Add a [memo](alarm) to [swimming](tag) in the [sport](category) category
+    - Add a [memo](alarm) to [clear plates](tag)
+    - Add a [memo](alarm) in the [school](category) category to [finish homework](tag)
+    - Add a [memo](alarm) to [dictee homework](tag)
+    - Add a [memo](alarm) to [go to the university](tag)
+    - Add a [memo](alarm) to [go to the lesson](tag) in the [university](category) category
+    - Add a [memo](alarm) to [feed parrots](tag)
+    - Add a [memo](alarm) in the [sport](category) category to [gymnastics](tag)
+    - Add a [memo](alarm) to [clean hamster cage](tag)
+    - Add a [memo](alarm) to [go to the hospital](tag)
+    - Add a [memo](alarm) to [go to the dentist](tag)
+    - Add a [memo](alarm) to [go to work](tag) in the [jobs](category) category
+    - Add a [memo](alarm) to [clean the room](tag)
+    - Add a [memo](alarm) to [take out the trash](tag)
+    - Add a [memo](alarm) to [call the doctor](tag) in the [healty](category) category
+    - Add a [memo](alarm) to [call Luca](tag) in the [hobby](category) category
+    - Add a [memo](alarm) to [call Mario](tag) in the [jobs](category) category
+    - Add a [memo](alarm) to [call the electician](tag)
+    - Add a [memo](alarm) to [buy the chart on amazon](tag) in the [shopping](category) category
+    - Add a [memo](alarm) in the [hobby](category) category to [buy on amazon](tag)
+    - Add a [memo](alarm) to [buy the dinner](tag)
+    - Add a [memo](alarm) to [go shopping](tag)
+    - Add a [memo](alarm) to [clean the parrots](tag)
+    - Add a [memo](alarm) to [walk the dog](tag)
+    - Add a [memo](alarm) to [go to school](tag)
+    - Add a [memo](alarm) to [study math](tag)
+    - Add a [memo](alarm) to [study english](tag) in the [school](category) category
+    - Add a [memo](alarm) to [study italian](tag)
+    - Add a [memo](alarm) to [complete the project](tag) in the [university](category) category
+    - Add a [memo](alarm) to [turn off the tv](tag)
+    - Add a [memo](alarm) to [turn off the lights](tag)
+    - Add a [memo](alarm) in the [sport](category) category to [unpack the dishwasher](tag)
+    - Add a [memo](alarm) to [do the dishwasher](tag)
+    - Add a [memo](alarm) to [fill the dishwasher](tag)
+    - Add a [memo](alarm) to [unpack the washing machine](tag) in the [services](category) category
+    - Add a [memo](alarm) to [do the washing machine](tag)
+    - Add a [memo](alarm) to [fill the washing machine](tag)
+    - Add a [memo](alarm) to [close the windows](tag)
+    - Add a [memo](alarm) to [feed my son](tag) in the [family](category) category
+    - Add an [alarm](alarm) to [get dressed](tag)
+    - Add an [alarm](alarm) to [make bed](tag) in the [family](category) category
+    - Add an [alarm](alarm) to [remove plates from table](tag)
+    - Add an [alarm](alarm) to [wash face](tag)
+    - Add an [alarm](alarm) to [empty backpank](tag)
+    - Add an [alarm](alarm) to [tutoring](tag)
+    - Add an [alarm](alarm) to [make lunch](tag)
+    - Add an [alarm](alarm) to [shower](tag)
+    - Add an [alarm](alarm) to [put outfit out](tag) for next day
+    - Add an [alarm](alarm) to [play the piano](tag)
+    - Add an [alarm](alarm) to [put away laundry](tag)
+    - Add an [alarm](alarm) to [reading](tag) in the [hobby](category) category
+    - Add an [alarm](alarm) to [swimming](tag) in the [hobby](category) category
+    - Add an [alarm](alarm) to [clear plates](tag)
+    - Add an [alarm](alarm) to [finish homework](tag)
+    - Add an [alarm](alarm) to [dictee homework](tag)
+    - Add an [alarm](alarm) to [go to the university](tag) in the [university](category) category
+    - Add an [alarm](alarm) to [go to the lesson](tag) in the [jobs](category) category
+    - Add an [alarm](alarm) to [feed parrots](tag)
+    - Add an [alarm](alarm) to [gymnastics](tag) in the [sport](category) category
+    - Add an [alarm](alarm) to [clean hamster cage](tag)
+    - Add an [alarm](alarm) to [go to the hospital](tag)
+    - Add an [alarm](alarm) to [go to the dentist](tag) in the [healty](category) category
+    - Add an [alarm](alarm) to [go to work](tag)
+    - Add an [alarm](alarm) to [clean the room](tag)
+    - Add an [alarm](alarm) to [take out the trash](tag)
+    - Add an [alarm](alarm) to [call the doctor](tag) in the [healty](category) category
+    - Add an [alarm](alarm) to [call Luca](tag)
+    - Add an [alarm](alarm) to [call Mario](tag)
+    - Add an [alarm](alarm) to [call the electician](tag)
+    - Add an [alarm](alarm) to [buy the chart on amazon](tag)
+    - Add an [alarm](alarm) to [buy on amazon](tag) in the [shopping](category) category
+    - Add an [alarm](alarm) to [buy the dinner](tag)
+    - Add an [alarm](alarm) to [go shopping](tag) in the [shopping](category) category
+    - Add an [alarm](alarm) to [clean the parrots](tag) in the [services](category) category
+    - Add an [alarm](alarm) to [walk the dog](tag)
+    - Add an [alarm](alarm) to [go to school](tag)
+    - Add an [alarm](alarm) to [study math](tag) in the [school](category) category
+    - Add an [alarm](alarm) to [study english](tag)
+    - Add an [alarm](alarm) to [study italian](tag)
+    - Add an [alarm](alarm) to [complete the project](tag) in the [jobs](category) category
+    - Add an [alarm](alarm) to [turn off the tv](tag)
+    - Add an [alarm](alarm) to [turn off the lights](tag)
+    - Add an [alarm](alarm) to [unpack the dishwasher](tag)
+    - Add an [alarm](alarm) to [do the dishwasher](tag)
+    - Add an [alarm](alarm) to [fill the dishwasher](tag)
+    - Add an [alarm](alarm) to [unpack the washing machine](tag)
+    - Add an [alarm](alarm) to [do the washing machine](tag)
+    - Add an [alarm](alarm) to [fill the washing machine](tag)
+    - Add an [alarm](alarm) to [close the windows](tag)
+    - Add an [alarm](alarm) to [feed my son](tag) in the [family](category) category
+    - Add a [reminder](alarm) to [get dressed](tag)
+    - Add a [reminder](alarm) to [make bed](tag) in the [family](category) category
+    - Add a [reminder](alarm) to [remove plates from table](tag)
+    - Add a [reminder](alarm) to [wash face](tag)
+    - Add a [reminder](alarm) to [empty backpank](tag)
+    - Add a [reminder](alarm) to [tutoring](tag) in the [services](category) category
+    - Add a [reminder](alarm) to [make lunch](tag)
+    - Add a [reminder](alarm) to [shower](tag)
+    - Add a [reminder](alarm) to [put outfit out for next day](tag)
+    - Add a [reminder](alarm) in the [hobby](category) category to [play the piano](tag)
+    - Add a [reminder](alarm) to [put away laundry](tag)
+    - Add a [reminder](alarm) in the [hobby](category) category to [reading](tag)
+    - Add a [reminder](alarm) to [swimming](tag)
+    - Add a [reminder](alarm) in the [school](category) category to [clear plates](tag)
+    - Add a [reminder](alarm) to [finish homework](tag)
+    - Add a [reminder](alarm) to [dictee homework](tag)
+    - Add a [reminder](alarm) to [go to the university](tag) in the [university](category) category
+    - Add a [reminder](alarm) to [go to the lesson](tag)
+    - Add a [reminder](alarm) to [feed parrots](tag) at 18
+    - Add a [reminder](alarm) to [gymnastics](tag) in the [sport](category) category
+    - Add a [reminder](alarm) to [clean hamster cage](tag)
+    - Add a [reminder](alarm) in the [work](category) category to [go to the hospital](tag)
+    - Add a [reminder](alarm) to [go to the dentist](tag) in my [personal](category) category
+    - Add a [reminder](alarm) to [go to work](tag)
+    - Add a [reminder](alarm) to [clean the room](tag)
+    - Add a [reminder](alarm) in the [family](category) category to [take out the trash](tag)
+    - Add a [reminder](alarm) to [call the doctor](tag) in the [healty](category) category
+    - Add a [reminder](alarm) to [call Luca](tag) in the [friends](category) category
+    - Add a [reminder](alarm) to [call Mario](tag)
+    - Add a [reminder](alarm) to [call the electician](tag) in the [jobs](category) category
+    - Add a [reminder](alarm) to [buy the chart on amazon](tag)
+    - Add a [reminder](alarm) to [buy on amazon](tag)
+    - Add a [reminder](alarm) in the [family](category) category to [buy the dinner](tag)
+    - Add a [reminder](alarm) to [go shopping](tag)
+    - Add a [reminder](alarm) to [clean the parrots](tag)
+    - Add a [reminder](alarm) to [walk the dog](tag) in the [hobby](category) category
+    - Add a [reminder](alarm) to [go to school](tag)
+    - Add a [reminder](alarm) to [study math](tag) in the [study](category) category for tomorrow
+    - Add a [reminder](alarm) to [study english](tag)
+    - Add a [reminder](alarm) in the [school](category) category to [study italian](tag)
+    - Add a [reminder](alarm) to [complete the project](tag)
+    - Add a [reminder](alarm) to [turn off the tv](tag) in 45 minutes
+    - Add a [reminder](alarm) to [turn off the lights](tag) at 23 o'clock
+    - Add a [reminder](alarm) in the [family](category) category to [unpack the dishwasher](tag)
+    - Add a [reminder](alarm) to [do the dishwasher](tag)
+    - Add a [reminder](alarm) to [fill the dishwasher](tag)
+    - Add a [reminder](alarm) to [unpack the washing machine](tag)
+    - Add a [reminder](alarm) to [do the washing machine](tag)
+    - Add a [reminder](alarm) to [fill the washing machine](tag)
+    - Add a [reminder](alarm) in the [personal](category) category to [close the windows](tag)
+    - Add a [reminder](alarm) to [feed my son](tag) in the [family](category) category
+    - [Remind me](alarm) to [get dressed](tag)
+    - [Remind me](alarm) to [make bed](tag) at 8 in the morning
+    - [Remind me](alarm) to [remove plates from table](tag)
+    - [Remind me](alarm) to [wash face](tag) later
+    - [Remind me](alarm) to [empty backpank](tag)
+    - [Remind me](alarm) to [tutoring](tag) in the [services](category) category
+    - [Remind me](alarm) to [make lunch](tag) at half past seven
+    - [Remind me](alarm) to [take a shower](tag) in 2 hours
+    - [Remind me](alarm) to [put outfit out for next day](tag)
+    - [Remind me](alarm) to [play the piano](tag) in the [hobby](category) category
+    - [Remind me](alarm) to [put away laundry](tag)
+    - [Remind me](alarm) to [read](tag) at 3'oclock
+    - [Remind me](alarm) to [swimming](tag) in the [hobby](category) category
+    - [Remind me](alarm) to [clear plates](tag) after dinner
+    - [Remind me](alarm) to [finish my homework](tag)
+    - [Remind me](alarm) to [dictee homework](tag)
+    - [Remind me](alarm) to [go to the university](tag) at 9am
+    - [Remind me](alarm) to [go to the lesson](tag) in 3 hours
+    - [Remind me](alarm) to [feed parrots](tag)
+    - [Remind me](alarm) to [gymnastics](tag) Tuesday at 7 pm
+    - [Remind me](alarm) to [clean hamster cage](tag)
+    - [Remind me](alarm) to [go to the hospital](tag)
+    - [Remind me](alarm) to [go to the dentist](tag)
+    - [Remind me](alarm) to [go to work](tag)
+    - [Remind me](alarm) to [clean the room](tag) in the [services](category) category
+    - [Remind me](alarm) to [take out the trash](tag) before the volleyball match
+    - [Remind me](alarm) to [call the doctor](tag) next wednesday
+    - [Remind me](alarm) to [call Luca](tag) tomorrow
+    - [Remind me](alarm) to [call Mario](tag) after lunch
+    - [Remind me](alarm) to [call the electrician](tag) in the [services](category) category
+    - [Remind me](alarm) to [buy the chart on amazon](tag)
+    - [Remind me](alarm) in the [shopping](category) category to [buy on amazon](tag) a new iPhone
+    - [Remind me](alarm) to [buy the dinner](tag)
+    - [Remind me](alarm) to [go shopping](tag)
+    - [Remind me](alarm) to [clean the parrots](tag) in the [services](category) category
+    - [Remind me](alarm) to [walk the dog](tag) before going to sleep
+    - [Remind me](alarm) to [go to school](tag)
+    - [Remind me](alarm) in the [school](category) category to [study math](tag)
+    - [Remind me](alarm) to [study english](tag)
+    - [Remind me](alarm) to [study italian](tag) in the [study](category) category for tomorrow
+    - [Remind me](alarm) to [complete the project](tag)
+    - [Remind me](alarm) to [turn off the tv](tag)
+    - [Remind me](alarm) to [turn off the lights](tag)
+    - [Remind me](alarm) in the [house](category) category to [unpack the dishwasher](tag)
+    - [Remind me](alarm) to [do the dishwasher](tag)
+    - [Remind me](alarm) to [fill the dishwasher](tag)
+    - [Remind me](alarm) to [unpack the washing machine](tag)
+    - [Remind me](alarm) to [do the washing machine](tag)
+    - [Remind me](alarm) to [fill the washing machine](tag)
+    - [Remind me](alarm) to [close the windows](tag) in the [family](category) category
+    - [Remind me](alarm) to [feed my son](tag)
+    - Create a [memo](alarm) for tomorrow afternoon at 4pm [AI lesson](tag)
+    - Create a to-do list for my [university](category) commitments
+    - I want to create a to-do list named [family](category) to [remind me](alarm) to [reply to Dad's e-mail](tag)
+    - I want to [remember](alarm) to [pay my metro pass](tag) by next week
+    - Set an [alarm](alarm) for me to [start English research](tag) at 3 o' clock
+    - Add to [university](category) category [English class](tag) on Tuesday at 11am
+    - [Remind me](alarm) to [call Pat](tag)
+    - Add to my to-do list that I need a [new parking sticker](tag) by tomorrow evening
+    - [Remind me](alarm) to [go to the history study group](tag) at 12:15 pm
+    - Add to my [job](category) category a to-do list to [go to work](tag) at 4 o' clock
+    - Add to my to-do list that I have to [do math problems](tag) after class in [university](category)
+    - [Remind me](alarm) to [buy some flowers](tag) for my girlfriend
+    - Add to my [friends](category) category that I have to [call Umberto](tag) after 12 pm
+    - [Remind me](alarm) to [send feedback to designers](tag) for tomorrow at 9am
+    - Add to my to-do list [review invoices](tag) in the [work](category) category for next Tuesday
+    - Set an [alarm](alarm) for my [presentation](tag) at 6.30
+    - I'd like to create a [reminder](alarm) in the [sport](category) category for my [match](tag)
+    - [Remind me](alarm) to [accompany Luca](tag) tomorrow at noon
+    - [Remind me](alarm) to [remove plates from table](tag) for today at 10am
+    - Add a [memo](alarm) to [remove plates from table](tag) for today at 10am
+    - Add a [reminder](alarm) to [remove plates from table](tag) for today at 10am
+    - Set an [alarm](alarm) to [remove plates from table](tag) for today at 10am
+    - Add to my to-do list to [remove plates from table](tag) for today at 10am
+    - Create a [memo](alarm) to [put away laundry](tag) for tomorrow at 17pm
+    - [remind me](alarm) to [put away laundry](tag) for tomorrow at 17pm
+    - Set an [alarm](alarm) to [put away laundry](tag) for tomorrow at 17pm
+    - Add a [reminder](alarm) to [put away laundry](tag) for tomorrow at 17pm
+    - Add to my to-do list to [put away laundry](tag) for tomorrow at 17pm
+    - Set an [alarm](alarm) to [put the outfit out](tag) for the next day before 22 o'clock
+    - Create an [alarm](alarm) to [put the outfit out](tag) for the next day before 22 o'clock
+    - [Remind me](alarm) to [put the outfit out](tag) for the next day before 22 o'clock
+    - Add to my to-do list to [put the outfit out](tag) for the next day before 22 o'clock
+    - add a [memo](alarm) to [put the outfit out](tag) for the next day before 22 o'clock
+    - Add a [reminder](alarm) to [put the outfit out](tag) for the next day before 22 o'clock
+    - Add to my to-do list to [go to the swimming pool](tag) in the [sport](category) category
+    - [remind me](alarm) to [go to the swimming pool](tag) in the [sport](category) category
+    - Create a [memo](alarm) to [go to the swimming pool](tag) in the [sport](category) category
+    - Set an [alarm](alarm) to [go to the swimming pool](tag) in the [sport](category) category
+    - Add a [reminder](alarm) to [go to the swimming pool](tag) in the [sport](category) category
+    - I want to create an [alarm](alarm) to remind me to [play piano](tag) in the [music](category) category for the next week
+    - I want to add a [memo](alarm) to remind me to [play piano](tag) in the [music](category) category for the next week
+    - I want to add a [reminder](alarm) to remind me to [play piano](tag) in the [music](category) category for the next week
+    - I want to add to my to-do list to [play piano](tag) in the [music](category) category for the next week
+    - I want to set an [alarm](alarm) to remind me to [play piano](tag) in the [music](category) category for the next week
+    - Add to my to-do list to [load the dishwasher](tag) this afternoon
+    - Create an [alarm](alarm) to [load the dishwasher](tag) this afternoon
+    - [Remind me](alarm) to [load the dishwasher](tag) this afternoon
+    - Add to [services](category) category to [clean front door and back door glass](tag) for saturday
+    - [Remind me](alarm) to [wipe out the refrigerator](tag) on November 14th
+    - Create a [memo](alarm) to [wipe out the refrigerator](tag) on November 14th
+    - set an [alarm](alarm) to [wipe out the refrigerator](tag) in 15 minutes
+    - Add a [reminder](alarm) to [wipe out the refrigerator](tag) in 15 minutes
+    - Add to my to-do list to [wipe out the refrigerator](tag) in four days
+    - I want you to [remind me](alarm) to [clean master bathroom](tag) this evening
+    - Create an [alarm](alarm) to [restock toilet paper](tag) in the [shopping](category) category for the next monday
+    - add to my to-do list to [restock toilet paper](tag) in the [shopping](category) category for the next monday
+    - Add to the [shopping](category) category to [restock toilet paper](tag) for the next monday
+    - Add to [personal](category) category to [place online orders](tag) for today
+    - add a [memo](alarm) to [print chore charts](tag) tomorrow morning at 8am
+    - Add a [reminder](alarm) to [print chore charts](tag) tomorrow morning at 8am
+    - [Remind me](alarm) to [take a break](tag) in 15 minutes
+    - Insert in the to-do list to [call Claudio](tag)
+    - Insert in my to-do list that I want to [buy milk](tag)
+    - Insert in to-do list [watch football match](tag)
+    - [remind me](alarm) to [call Giulio](tag) at 10pm
+    - Add to the to-do list [go to the cinema](tag)
+    - Add to the to-do list [go to the home](tag)
+    - Add to the to-do list [call Giovanni](tag)
+    - Add to the to-do list [see the match](tag)
+- intent: todo_remove
+  examples: |
+    - remove a reminder
+    - delete a memo
+    - cancel a to-do
+    - forget an alarm
+    - eliminate a memo
+    - erase a reminder
+    - can you delete a to-do
+    - can you please forget a memo
+    - please remove an alarm
+    - remove [get dressed](tag)
+    - delete the [reminder](alarm) to [put the outfit out for the next day](tag)
+    - cancel [clean master bathroom](tag) of today
+    - forget [fill the dishwasher](tag)
+    - lost today [buy the dinner](tag)
+    - eliminate [buy the chart on amazon](tag) from to-do list
+    - erase [walk the dog](tag) at 9:30
+    - can you delete the alarm [study english](tag)?
+    - can you please forget tomorrow to [do the dishwasher](tag)?
+    - please remove [feed my son](tag)
+    - remove [go to work](tag) from alarm
+    - delete alarm [complete the project](tag)
+    - cancel the memo [turn off the tv](tag)
+    - forget the reminder [go to the university](tag) at 9pm
+    - lost a memo at half past seven [dictee homework](tag)
+    - eliminate [call Mario](tag) after lunch
+    - erase at 7am [go shopping](tag)
+    - can you forget [walk the dog](tag) before going to sleep?
+    - can you please delete the alarm to [buy the dinner](tag)?
+    - please cancel [make bed](tag) at 8 in the morning
+    - remove [go to the hospital](tag) of tomorrow
+    - delete a memo to [clear plates](tag) after dinner
+    - cancel [put away laundry](tag) at 9am
+    - forget [call the electrician](tag) tonight
+    - eliminate an remind to [unpack the washing machine](tag)
+    - erase an alarm [unpack the dishwasher](tag)
+    - can you delete a to-do [call Mario](tag) of after lunch?
+    - can you please forget [go to work](tag)?
+    - please remove gymnastics](tag) Tuesday at 7 pm
+    - remove the memo for [AI lesson](tag) of tomorrow afternoon
+    - delete [reply to Dad's e-mail](tag) from my to-do list
+    - cancel that I have to [pay my metro pass](tag)
+    - forget [to start English research](tag) at 3' o clock
+    - eliminate from [university](category) category the [English lesson](tag)
+    - erase to [call Pat](tag)
+    - can you delete that I need a [new parking sticker](tag) by tomorrow evening?
+    - can you please forget the reminder at 10am?
+    - please remove the memo at 12:15 pm?
+    - remove [go to the history study group]
+    - delete from my [job](category) category [go to work](tag)
+    - cancel to [accompany Luca] tomorrow at noon
+    - forget the [match](tag) in the [sport](category) category
+    - eliminate the alarm for my [presentation](tag)
+    - erase the alarm at 18:30
+    - can you cancel the alarm for [put away laundry](tag)
+    - can you please forget that I have to [do math problems](tag)?
+    - can you forget the reminder for [remove plates from table](tag)?
+    - please remove that I have to [review invoices](tag)
+    - remove to [send feedback to designers](tag) for tomorrow at 9am
+    - delete reminder for tomorrow
+    - cancel [call Umberto](tag)
+    - forget to [buy some flowers](tag) for my girlfriend
+    - eliminate alarm for tonight
+    - erase reminder at 5pm
+    - can you delete the alarm at half past 10?
+    - can you please forget that I need to go to the gym?
+    - please remove that I want to go to see a football match tomorrow
+    - remove a reminder for tomorrow
+    - delete [load the dishwasher](tag) from my reminders
+    - cancel the memo at 9pm
+    - forget [buy some flowers](tag) for Tuesday
+    - eliminate to [clean master bathroom](tag) from my to-do list
+    - erase [take a break](tag)
+    - can you delete [play piano](tag) from my list?
+    - can you please forget [restock toilet paper](tag) for Sunday
+    - please remove [go to the swimming pool](tag)?
+    - remove to [place online orders](tag)
+    - delete the reminder for next week
+    - cancel my alarm for 7pm
+    - forget to [put the outfit out](tag)
+    - eliminate [go to work](tag) for 8am
+    - erase [go to the hospital](tag) from my reminders
+    - can you delete [put away laundry](tag)?
+    - can you please forget [finish my homework](tag) for Monday?
+    - please remove [read](tag)
+    - remove to [fill the dishwasher](tag) today
+    - delete to [call Mario](tag) tomorrow at 6:30
+    - cancel [go to school](tag)
+    - forget [clean the room](tag) for next month
+    - eliminate [make bed](tag) from my memos
+    - erase [call the electician](tag)
+    - remove [meet my friend](tag) tonight
+    - can you delete [unpack the dishwasher](tag)
+    - can you please forget my reminder for next week?
+    - please remove [clean front door and back door glass](tag) from the list
+    - remove the [memo](alarm) to [wipe out the refrigerator](tag) on November 14th
+    - delete the [alarm](alarm) to [restock toilet paper](tag) in the [shopping](category) category for the next monday
+    - cancel [clean hamster cage](tag)
+    - forget to [go to the swimming pool](tag)
+    - eliminate from to-do list to [put away laundry](tag) for tomorrow at 17pm
+    - erase to [pay my metro pass](tag)
+    - can you delete the [reminder](alarm) to [go shopping](tag)?
+    - can you please forget the [memo](alarm) to [remove plates from table](tag) for today at 10am?
+    - please remove [clean master bathroom](tag)
+    - remove the reminder at 21pm
+    - delete the memo for tomorrow at 17pm
+    - cancel [make bed](tag) at 8 in the morning
+    - forget from my [job](category) category a to-do list to [go to work](tag) at 4 o' clock
+    - can you eliminate the to-do list for my [university](category) commitments?
+    - please erase [feed parrots](tag)
+    - can you delete the reminder for Monday at 9 am?
+    - can you please forget to play piano at 7pm?
+    - please remove [send feedback to designers](tag) for tomorrow at 9am
+    - can you remove the [alarm](alarm) to [walk the dog](tag)
+    - delete to [make lunch](tag)
+    - cancel to [call Mario](tag)
+    - forget the memo at 22 o'clock
+    - eliminate to [put away laundry](tag)
+    - erase the to-do list to [call the electician](tag) in the [services](category) category
+    - can you delete to [study english](tag) in the [school](category) category
+    - can you please forget the memo for today at 12am?
+    - please remove to [get dressed](tag)
+- intent: todo_delete_all
+  examples: |
+    - delete all my reminders
+    - delete all my memos
+    - clear my to-do list
+    - clear my alarms
+    - drop all my reminders
+    - forget all my reminders
+    - empty the list
+    - empty my list
+    - empty list
+    - empty
+    - empty reminders
+    - empty memos
+    - empty alarms
+    - remove everything
+    - erase everything
+    - delete everything
+    - can you please delete all my alarms?
+    - please empty my todo list
+    - please empty the list
+    - please empty list
+    - can you empty my list?
+    - can you please empty the list?
+    - remove all the alarms
+    - remove the to-do list
+    - remove to-do list
+    - remove all the memos
+    - remove all
+    - drop all the reminders
+    - remove all the alarms from to-do list
+- intent: todo_visualize
+  examples: |
+    - Show
+    - See
+    - view
+    - show my to-dos
+    - see list
+    - see to-do list
+    - what inside my list?
+    - what i have my list?
+    - ok, now show my list
+    - can i see my list?
+    - can you show my list?
+    - i want to see my list
+    - I want to see my list, can you show me that?
+    - Can you display my list of reminders?
+    - i want to see my list. Can you show that?
+    - i want to see my list. show me that
+    - show my list please
+    - i want to see my to-do list
+    - show list
+    - Can i see my list, please?
+    - Show my list please
+    - Please can you show to me my to-do list
+    - Very well now Show my list
+    - Let see the list
+    - Please display the list
+    - now show list please
+    - please bot show the list
+    - can you show my reminders?
+    - show my reminders
+    - show my memo
+    - can I see my activities?
+    - can you show my alarms?
+    - display my activities
+    - Show my to-do list for [sport](category) category
+    - Let me see all my memos in the [hobby](category) category
+    - I want to view all the activities for today
+    - show my to-dos for [football](category) category
+    - see alarms for this evening
+    - see to-do list of [football](category)
+    - Can I see what is inside my [work](category) category?
+    - what i have in my [hobby](category) category?
+    - ok, now show my [personal](category) category
+    - can i see my list for [university](category) category?
+    - can you show my list for next monday?
+    - i want to see my list for tomorrow
+    - I want to see my reminders for 9pm events, can you show me that?
+    - Can you display my list of reminders for Monday?
+    - i want to see my list for today. Can you show that?
+    - i want to see my list for [personal](category) category. show me that
+    - show all my alarms for [gym](category) category please
+    - i want to see my list for [school](category) category
+    - i want to see my to-do list for the next month
+    - show list for [job](category) category
+    - Can i see my [school](category) category, please?
+    - Show my list for Wednesday please
+    - Please can you show to me my to-do list for [food](category) category
+    - Very well now Show my [friends](category) category
+    - Let me see the list for Saturday night
+    - Please display the list of reminders in two days' time
+    - now show [football](category) category please
+    - please bot show the list for the next week
+    - can you show my reminders for [university](category) category?
+    - show my reminders for friday
+    - show my memo for [shopping](category) category
+    - can I see my activities for tomorrow?
+    - can you show my alarms for sunday?
+    - display my activities for [volleyball](category) category
+- intent: only_information
+  examples: |
+    - [go to the gym](tag)
+    - [doctor](tag)
+    - [load the dishwasher](tag)
+    - [put away the laundry](tag)
+    - [go shopping](tag)
+    - [go to the dentist](tag)
+    - [call the doctor](tag)
+    - [English tutorial](tag) at 9:10
+    - [Pick up Joey from school](tag)
+    - [walk the dog](tag)
+    - [play the piano](tag)
+    - [buy groceries](tag)
+    - [clean the room](tag)
+    - [study italian](tag)
+    - [write to Alessia](tag)
+    - [buy a book](tag)
+    - [take a break](tag)
+    - [buy a second phone](tag)
+    - [meet for a coffee](tag)
+    - [go to the university](tag) tomorrow
+    - [picking up pizzas](tag) after 21 pm
+    - [mute the phone](tag) before 10pm
+    - [buying train tickets] tomorrow
+    - [shower](tag) in 30 minutes
+    - [study english](tag)
+    - [go to the gym](tag) tomorrow at 12pm
+    - [complete the project](tag) for tomorrow at 8am
+    - [go to the dentist](tag) on the 12th september at 15 o'clock
+    - [go shopping](tag) in the [services](category) category
+    - [get dressed](tag)
+    - [make bed](tag) in the [services](category) category
+    - [remove plates from table](tag) in the [services](category) category
+    - [wash face](tag)
+    - [empty backpank](tag)
+    - [tutoring](tag)
+    - [make lunch](tag)
+    - [shower](tag)
+    - [put outfit out](tag) for next day
+    - [play the piano](tag) in the [hobby](category) category
+    - [put away laundry](tag)
+    - [reading](tag) in the [hobby](category) category
+    - [swimming](tag) in the [sport](category) category
+    - [clear plates](tag)
+    - [finish homework](tag) in the [school](category) category
+    - [dictee homework](tag)
+    - [go to the university](tag) in the [university](category) category
+    - [go to the lesson](tag)
+    - [feed parrots](tag)
+    - [gymnastics](tag)
+    - [clean hamster cage](tag) at half past 9
+    - [go to the hospital](tag)
+    - [go to work](tag) later
+    - [take out the trash](tag)
+    - [call Luca](tag) at half past 10
+    - [call Mario](tag)
+    - [call the electician](tag) in the [services](category) category
+    - [buy the chart on amazon](tag)
+    - [buy on amazon](tag)
+    - [buy the dinner](tag)
+    - [go shopping](tag) in the [weekend](category) category at 10 o'clock
+    - [clean the parrots](tag)
+    - [go to school](tag)
+    - [study math](tag) at quarter past 5
+    - [study italian](tag) at quarter to 2
+    - [complete the project](tag) in the [work](category) category
+    - [turn off the tv](tag)
+    - [turn off the lights](tag)
+    - [unpack the dishwasher](tag)
+    - [do the dishwasher](tag)
+    - [fill the dishwasher](tag)
+    - [unpack the washing machine](tag) at 5 o'clock
+    - [do the washing machine](tag)
+    - [fill the washing machine](tag)
+    - [close the windows](tag) at half past 10
+    - [feed my son](tag) in the [family](category) category
+    - [call the electrician](tag) in the [services](category) category
+    - in the [shopping](category) category to [buy on amazon](tag) a new iPhone
+    - [clean the parrots](tag) in the [services](category) category
+    - [walk the dog](tag) before going to sleep
+    - in the [school](category) category [study math](tag)
+    - [study italian](tag) in the [study](category) category for tomorrow
+    - [complete the project](tag)
+    - in the [house](category) category to [unpack the dishwasher](tag)
+    - [unpack the washing machine](tag)
+    - [close the windows](tag) in the [family](category) category
+    - [feed my son](tag)
+    - tomorrow afternoon at 4pm there is the [AI lesson](tag)
+    - my [university](category) commitments
+    - [reply to Dad's e-mail](tag)
+    - [pay my metro pass](tag) by next week
+    - [start English research](tag) at 3 o' clock
+    - Add to [university](category) the [English class](tag)
+    - [call Pat](tag)
+    - I need a [new parking sticker](tag) by tomorrow evening
+    - [go to the history study group](tag) at 12:15 pm
+    - [go to work](tag) at 4 o' clock
+    - [do math problems](tag) in [university](category)
+    - [buy some flowers](tag) for my girlfriend
+    - [call Umberto](tag) after 12 pm
+    - [send feedback to designers](tag) for tomorrow at 9am
+    - [review invoices](tag) in the [work](category) category
+    - [presentation](tag) at 6.30
+    - [sport](category) for my [match](tag)
+    - [accompany Luca](tag) tomorrow at noon
+    - [remove plates from table](tag) for today at 10am
+    - [put away laundry](tag) for tomorrow at 17pm
+    - [put the outfit out for the next day](tag) before 22 o'clock
+    - [go to the swimming pool](tag) in the [sport](category) category
+    - [play piano](tag) in the [music](category) category for the next week
+    - to [load the dishwasher](tag) this afternoon
+    - [load the dishwasher](tag) this afternoon
+    - [wipe out the refrigerator](tag)
+    - [clean master bathroom](tag) this evening
+    - [restock toilet paper](tag) in the [shopping](category) category for the next monday
+    - to [restock toilet paper](tag) in the [shopping](category) category for the next monday
+    - [personal](category) category to [place online orders](tag)
+    - [print chore charts](tag) tomorrow morning at 8am
+    - [print chore charts](tag)
+    - [take a break](tag) in 15 minutes
+    - [complete the project](tag) in the [university](category) category
+    - [unpack the washing machine](tag) in the [services](category) category
+    - [close the windows](tag)
+    - to [remove plates from table](tag)
+    - to [wash face](tag)
+    - [make bed](tag) in the [family](category) category
+    - [work](category)
+    - [university](category)
+    - [sport](category)
+    - [personal](category)
+    - [family](category)
+    - [job](category)
+    - [hobby](category)
+    - [services](category)
+    - [weekend](category)
+    - [party](category)
+    - [default](category)
+    - [emergency](category)
+    - [travels](category)
+    - [important](category)
+    - 7am
+    - 10am
+    - 10 p.m.
+    - 21 pm
+    - at 9:10
+    - in 30 minutes
+    - tomorrow
+    - on November 14th
+    - for wednesday
+    - this afternoon
+    - tonight
+    - at 4 o' clock
+    - at 12:15 pm
+    - before 22 o'clock
+    - 8:30 a.m.
+    - 11pm
+    - 5pm
+    - at 3'oclock
+    - at 11 in the morning
+    - after ten o' clock
+    - quarter past five
+    - at ten to twelve
+    - at quarter to 2
+    - 18
+    - 11am
+    - 6 a.m.
+    - 3 am
+    - 7:15 am
+    - 8:30am
+    - 22
+    - 4
+    - 6
+    - 16
+    - 11
+    - 13:32
+    - 15.30
+    - 20.45
+    - 22:18
+    - next year
+    - next month
+    - January
+    - May
+    - next October
+    - this July
+    - in 2 months
+    - in 3 days
+    - next week
+    - in four hours
+    - [alarm](alarm)
+- intent: stop
+  examples: |
+    - stop
+    - please, stop
+    - don't move on
+    - let's stop
+- intent: out_of_scope
+  examples: |
+    - please help with my ice cream it's dripping
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - i want a non dripping ice cream
+    - someone call the police i think the bot died
+    - show me a picture of a chicken
+    - neither
+    - I want french cuisine
+    - i am hungry
+    - restaurant
+    - can i be shown a gluten free restaurant
+    - i don't care!!!!
+    - i do not care how are you
+    - again?
+    - oh wait i gave you my work email address can i change it?
+    - hang on let me find it
+    - stop it, i do not care!!!
+    - how come?
+    - I changed my mind
+    - what?
+    - did i break you
+    - that link doesn't work!
+    - you already have that
+    - this is a really frustrating experience
+    - no stop
+    - give me food
+    - i want food
+    - Can I ask you questions first?
+    - is it a wasteland full of broken robot parts?
+    - can we keep chatting?
+    - talk to me
+    - who is your favourite robot?
+    - can you help me to build a bot
+    - a wood chuck can't chuck any kind of wood
+    - a wood chuck can't chuck wood
+    - are you wearing anything?
+    - can i arrange a taxi?
+    - can i book a taxi?
+    - can i order a pizza?
+    - give quiche a chance
+    - how much wood could a wood chuck chuck if a wood chuck would chuck wood?
+    - i am heavy weapons guy and this is my weapon
+    - i know kung-fu
+    - i need a taxi
+    - i want a pepperoni pizza
+    - i want to order a pizza
+    - i'd like a pizza please
+    - i'm all out of bubblegum
+    - i'm asking you to marry me
+    - it's an albany expression
+    - marry me
+    - now i have a machine gun ho-ho-ho!
+    - please marry me
+    - tell me what you're wearing?
+    - trial by stone!
+    - what are you wearing?
+    - will you marry me?
+    - you come to me on the day of my daughter's wedding
+    - you don't win friends with salad
+    - you're going to need a bigger boat
+    - fuck you
+    - oh my god
+    - fdsfds
+    - gfhetrwerf
+    - gfhgtreyhbdb
+- intent: todo_update
+  examples: |
+    - I want to update a todo
+    - I want to change a memo
+    - please, change a reminder
+    - can you please modify a todo?
+    - Update a reminder
+    - Change a todo
+    - Can you please update a memo?
+    - I want to update the memo [go shopping](tag)
+    - I want to change the reminder [study english](tag)
+    - change the todo [go to work](tag)
+    - change the date to tomorrow for the todo [make lunch](tag)
+    - update the time to 7pm for [load the dishwasher](tag)
+    - I want to update the todo [go shopping](tag)
+    - Can you update [feed parrots](tag)?
+    - please update the [gymnastics](tag) reminder
+    - I want to update the todo [clean hamster cage](tag)
+    - modify the tag [go to the hospital](tag)
+    - update the memo [go to work](tag)
+    - I would like to update [take out the trash](tag)
+    - could you please modify [call Luca](tag)?
+    - please update[call Mario](tag)
+    - modify the [alarm](alarm)
+    - I want to update the [alarm]{"entity": "alarm", "value": "reminder"} for the todo [go shopping](tag)
+    - please can you modify the [alarm](alarm) for tomorrow?
+    - change the [alarm](alarm) for the todo [go to the gym](tag)
+    - can you change the [alarm](alarm) to 7 o'clock?
+    - change the [alarm](alarm) to 9 am
+    - I want to modify the [alarm](alarm) for the todo [go to the cinema](tag) to 8pm for Wednesday
+    - I would update the [alarm](alarm) for tomorrow morning at 5am
+    - please, change the [alarm](alarm) of friday at 3 pm
+    - modify the [alarm](alarm) for today at 6pm
+    - please change the [alarm](alarm) of tomorrow to 17.08
+    - update the category to [work](category) for [watch the match](tag)
+    - update the category to [sport](category)
+    - update the category of the tag [go to school](tag) in [services](category)
+    - update the category in [services](category) category for [make bed](tag)
+    - update [remove plates from table](tag) category in [house](category)
+    - update the category in [personal] for [wash face](tag)
+    - I want to referesh the category to [clean](category)
+    - I want to update the category to [job](category)
+    - Change the category for [make lunch](tag) in [utilities](category)
+    - Refresh the tag [shower](tag) with the new category [personal](category)
+    - Upgrade the todo [put outfit out](tag) to category [utilities](category)
+    - I want to move the todo [play the piano](tag) in the [hobby](category) category
+    - I want to move the tag [put away laundry](tag) in the [house](category) category
+    - Update the tag [reading](tag) to the [hobby](category) category
+    - Move in the [sport](category) category
+    - Refresh [clear plates](tag) with the category [house](category)
+    - I want to refresh the [finish homework](tag) with the [school](category) category
+    - Update the tag [homework](tag) with the [university](category) category
+    - In the [university](category) category
+    - refresh the category to [lessons](category)
+    - update the category to [school](category)
+    - change the time to 9am
+    - Change the date to friday
+    - please update the date to thursday
+    - modify the time to this evening
+    - change the date to monday for the todo [go to work](tag)
+    - can you please update the time to 9pm for [call Mario](tag)
+    - I would like to update the date for the tag [buy flowers] in three days
+    - change the date of the reminder to tomorrow
+    - refresh the time to 7pm for the todo [go to school](tag)
+    - please change [walk the tog](tag) time to 4pm
+    - update the date to next month
+    - can you change the date to 11th of May?
+    - update the date to 4th of July
+    - modify the time to 8:55
+    - modify the date to next week
+    - change the time to 9am
+    - Change the date to friday
+    - please update the date to thursday
+    - modify the time to this evening
+    - change the date to monday for the todo [go to work](tag)
+    - can you please update the time to 9pm for [call Mario](tag)
+    - I would like to update the date for the tag [buy flowers] in three days
+    - change the date of the reminder to tomorrow
+    - refresh the time to 7pm for the todo [go to school](tag)
+    - please change [walk the tog](tag) time to 4pm
+    - update the date to next month
+    - can you change the date to 11th of May?
+    - update the date to 4th of July
+    - modify the time to 8:55
+    - update the time to 12:40
+    
+
+- synonym: reminder
+  examples: |
+    - memo
+    - remind me
+    - alarm
+    - remember

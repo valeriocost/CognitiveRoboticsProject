@@ -1,0 +1,355 @@
+[
+  {
+    "text": "Add a reminder in the work category to go to the hospital",
+    "entities": [
+      {
+        "start": 6,
+        "end": 14,
+        "value": "reminder",
+        "entity": "alarm"
+      },
+      {
+        "start": 22,
+        "end": 26,
+        "value": "work",
+        "entity": "category"
+      },
+      {
+        "start": 39,
+        "end": 57,
+        "value": "go to the hospital",
+        "entity": "tag"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "alarm",
+        "start": 6,
+        "end": 14,
+        "confidence_entity": 0.9995854496955872,
+        "value": "reminder",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 18,
+        "end": 26,
+        "confidence_entity": 0.6414967775344849,
+        "value": "the work",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 39,
+        "end": 57,
+        "confidence_entity": 0.7973255515098572,
+        "value": "go to the hospital",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Add a reminder to study math in the study category for tomorrow",
+    "entities": [
+      {
+        "start": 6,
+        "end": 14,
+        "value": "reminder",
+        "entity": "alarm"
+      },
+      {
+        "start": 18,
+        "end": 28,
+        "value": "study math",
+        "entity": "tag"
+      },
+      {
+        "start": 36,
+        "end": 41,
+        "value": "study",
+        "entity": "category"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "alarm",
+        "start": 6,
+        "end": 14,
+        "confidence_entity": 0.9997696280479431,
+        "value": "reminder",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 18,
+        "end": 28,
+        "confidence_entity": 0.542548656463623,
+        "value": "study math",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 36,
+        "end": 41,
+        "confidence_entity": 0.5635620951652527,
+        "value": "study",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Remind me to take out the trash before the volleyball match",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Remind me",
+        "entity": "alarm"
+      },
+      {
+        "start": 13,
+        "end": 31,
+        "value": "take out the trash",
+        "entity": "tag"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "alarm",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9985063672065735,
+        "value": "reminder",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "tag",
+        "start": 13,
+        "end": 31,
+        "confidence_entity": 0.738392174243927,
+        "value": "take out the trash",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 39,
+        "end": 42,
+        "confidence_entity": 0.5464293360710144,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Remind me to study italian in the study category for tomorrow",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Remind me",
+        "entity": "alarm"
+      },
+      {
+        "start": 13,
+        "end": 26,
+        "value": "study italian",
+        "entity": "tag"
+      },
+      {
+        "start": 34,
+        "end": 39,
+        "value": "study",
+        "entity": "category"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "alarm",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9978613257408142,
+        "value": "reminder",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "tag",
+        "start": 13,
+        "end": 26,
+        "confidence_entity": 0.5368294715881348,
+        "value": "study italian",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 34,
+        "end": 39,
+        "confidence_entity": 0.5450572371482849,
+        "value": "study",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Add to the to-do list go to the cinema",
+    "entities": [
+      {
+        "start": 22,
+        "end": 38,
+        "value": "go to the cinema",
+        "entity": "tag"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tag",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.5718197822570801,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 22,
+        "end": 38,
+        "confidence_entity": 0.5017632246017456,
+        "value": "go to the cinema",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Add to the to-do list go to the home",
+    "entities": [
+      {
+        "start": 22,
+        "end": 36,
+        "value": "go to the home",
+        "entity": "tag"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tag",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.5803221464157104,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 22,
+        "end": 36,
+        "confidence_entity": 0.500019907951355,
+        "value": "go to the home",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "remove to send feedback to designers for tomorrow at 9am",
+    "entities": [
+      {
+        "start": 10,
+        "end": 36,
+        "value": "send feedback to designers",
+        "entity": "tag"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tag",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.7373384237289429,
+        "value": "to",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 10,
+        "end": 36,
+        "confidence_entity": 0.8720005750656128,
+        "value": "send feedback to designers",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "forget to go to the swimming pool",
+    "entities": [
+      {
+        "start": 10,
+        "end": 33,
+        "value": "go to the swimming pool",
+        "entity": "tag"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tag",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.721531867980957,
+        "value": "to",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 10,
+        "end": 33,
+        "confidence_entity": 0.8944560885429382,
+        "value": "go to the swimming pool",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "put the outfit out for the next day before 22 o'clock",
+    "entities": [
+      {
+        "start": 0,
+        "end": 35,
+        "value": "put the outfit out for the next day",
+        "entity": "tag"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tag",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.7758721709251404,
+        "value": "put the outfit out",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tag",
+        "start": 23,
+        "end": 35,
+        "confidence_entity": 0.6043646335601807,
+        "value": "the next day",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please updatecall Mario",
+    "entities": [
+      {
+        "start": 13,
+        "end": 23,
+        "value": "call Mario",
+        "entity": "tag"
+      }
+    ],
+    "predicted_entities": []
+  }
+]
